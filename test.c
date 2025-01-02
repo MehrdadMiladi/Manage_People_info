@@ -1,13 +1,22 @@
 #include <stdio.h>
-#include <string.h>
+// terminal user interface
 #include <ncurses.h>
+
+//  buttons
+//  Labels
+//  Textbox
+
+// person form structure
+
+// add function
+// edit function
+// find function
+// remove function
 
 int main()
 {
        initscr();
-       addstr("Welcome to Info Manager!\n");
-       move(0, 25);
-       getch();
-       refresh();
+       raw();
+       keypad(stdscr, TRUE);
        return 0;
 }
